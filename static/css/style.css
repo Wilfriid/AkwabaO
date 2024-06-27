@@ -1,0 +1,1803 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: 0;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+body {
+    background-color: white;
+}
+section {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+
+}
+header  .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+ 
+}
+header  .logo a span {
+    color: #fff;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li  {
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+.btn-reservation {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.btn-reservation:hover {
+    background-color: #29d9d5;
+    color: #fff;
+ 
+}
+
+/* Home acceuil CSS */
+
+#home {
+
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url('/static/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+
+    
+}
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: transparent;
+    text-transform: lowercase;
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.home-btn {
+    margin-bottom: 20px;
+}
+
+.find_trip {
+    background-color: #222;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    bottom: -50px;
+}
+.find_trip form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.find_trip form div , .find_trip form input[type="submit"]{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.find_trip form label {
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.find_trip form input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #29d9d5;
+    outline: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+.find_trip form input[type="submit"] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.find_trip form input[type="submit"]:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+
+/*A propos CSS*/
+#a-propos {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    width: 100%;
+}
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #29d9d5;
+    position: relative;
+    margin-left:15px;
+    font-size: 18px;
+
+}
+.title::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-desc .left {
+    position: relative;
+    margin-left: 10px;
+    height: 250px;
+    width: 40%;
+}
+.img-desc .right {
+    width: 57%;
+}
+
+.img-desc .left video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 0 10px #29d9d5;
+}
+.img-desc .left::after {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    content: "";
+    height: 100%;
+    background-color: #29d9d5;
+    width: 100%;
+    z-index: -1;
+}
+.img-desc .right h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.img-desc .right p {
+    color: #999;
+    font: 14px;
+    margin-bottom: 36px;
+}
+.img-desc .right a {
+    border: 1px solid #29d9d5;
+    color: #29d9d5;
+    font-size: 14px;
+    padding: 8px 25px;
+    font-weight: bold;
+}
+
+/*Destination CSS*/
+#popular-destination {
+    padding: 0 10% ;
+    margin-bottom: 50px;
+}
+#popular-destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 32px;
+}
+#popular-destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+.box .content  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.box .content p {
+    padding: 2px;
+    font-size: 12px;
+}
+.box .content p:nth-child(3){
+    margin-bottom: 25px;
+}
+.box .content a {
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #29d9d5;
+    color: #29d9d5;
+    font-weight: bold;
+}
+.box:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+.box:hover .content {
+    transform: translateX(0);
+}
+
+/* Contact CSS */
+#contact {
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 90vh;
+}
+#contact form {
+    background-color: #fff;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.left-right .left , .left-right .right  {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600
+}
+#contact form input {
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+#contact form input:focus , textarea:focus {
+    border: 1px solid #29d9d5;
+}
+iframe {
+    height: 150px;
+    width: 100%;
+}
+#contact button {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contact button:hover {
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+}
+footer p span {
+    color: #29d9d5;
+}
+.responsive-menu {
+    display: none;
+}
+/*Responsive*/
+@media (max-width:750px) {
+    header .menu {
+        display: none;
+    }
+    .btn-reservation {
+        display: none;
+    }
+    /*Home responsive*/
+    #home h2 {
+        font-size: 18px;
+        -webkit-text-stroke: 0;
+        color: #fff;
+    }
+    #home h4 {
+        font-size: 28px;
+    }
+    #home p {
+        text-align: center;
+        font-size: 10px;
+    }
+    .find_trip {
+        width: 100%;
+        height: 200px;
+    }
+    .find_trip form {
+        flex-wrap: wrap;
+    }
+    .find_trip form div {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 47%;
+    }
+    .find_trip form input[type="submit"]{
+        width: 47%;
+    }
+    .home-btn {
+        display:block;
+    }
+    /*Responsive A propos*/
+    .img-desc {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-desc .left , .img-desc .right {
+        width: 100%;
+    }
+    .img-desc .left video {
+        width: 100%;
+    }
+    .img-desc .left::after {
+        background-color: transparent;
+    }
+    .img-desc .left {
+        margin-bottom: 20px;
+    }
+
+    /*Responsive menu*/
+    .responsive-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .responsive-menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 28px;
+        box-shadow: 0 10px 0 #29d9d5;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::after {
+        box-shadow: 0 0 0 #29d9d5; 
+        transform: rotate(45deg);
+    }
+    .responsive-menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::before {
+        transform: rotate(-45deg);
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        background-color: #222;
+        align-items: unset;
+        animation: animate-menu 1s forwards;
+    }
+    header .menu.responsive li {
+        margin: 20px;
+        width: 100px;
+        padding-left: 20px;
+    }
+
+    @keyframes animate-menu {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
+}
+
+
+/* destination */
+.box1{
+    width: 100%;
+    height: 550px;
+    background: url('/static/images/world-map-continent-global-support-graphic.jpg') no-repeat center center fixed; 
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+   
+  }
+
+
+.box2{
+    width: 100%;
+    height: 200px;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box2min1{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/babi.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+
+.box2min1:hover {
+    transform: scale(1.1); 
+}
+
+.box2min2{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/cap_vert.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min2:hover {
+    transform: scale(1.1); 
+}
+
+.box2min3{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/voyage-marrakech.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min3:hover {
+    transform: scale(1.1); 
+}
+
+.box2min4{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/dakar.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min4:hover {
+    transform: scale(1.1); 
+}
+
+.box2min5{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/seyc.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min5:hover {
+    transform: scale(1.1); 
+}
+
+.box2min6{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/ken.jpeg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min6:hover {
+    transform: scale(1.1); 
+}
+.box2min7{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/Zimbawe.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min7:hover {
+    transform: scale(1.1); 
+}
+
+.box2min8{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/afrique\ du\ sud.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min8:hover {
+    transform: scale(1.1); 
+}
+
+.box2min9{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/comores.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.box2min9:hover {
+    transform: scale(1.1); 
+}
+.box2min10{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/Turquie.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min10:hover {
+    transform: scale(1.1); 
+}
+.box2min11{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/madagascar.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min11:hover {
+    transform: scale(1.1); 
+}
+.box2min12{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/tunisie-tourisme.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min12:hover {
+    transform: scale(1.1); 
+}
+
+.box2min13{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/ghanau.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min13:hover {
+    transform: scale(1.1); 
+}
+
+.box2min14{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/angola.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min14:hover {
+    transform: scale(1.1); 
+}
+
+.box2min15{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/Algerie.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min15:hover {
+    transform: scale(1.1); 
+}
+
+.box2min16{
+    width: 23%;
+    height: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/voyage-au-botswana.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.box2min16:hover {
+    transform: scale(1.1); 
+}
+/* responsive */
+@media (max-width: 768px) {
+    .box2 {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: 600px;
+    }
+  
+    .box2min1, .box2min2, .box2min3, .box2min4, .box2min5, .box2min6, .box2min7, .box2min8, .box2min9, .box2min10, .box2min11, .box2min12, .box2min13, .box2min14, .box2min15, .box2min16 {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    
+  }
+
+/* abidjan */
+.abidjan {
+    width: 100%;
+    height: 600px;
+    /* background-color: #fff; */
+    
+    background: url('/static/images/city-sunset.jpg'); 
+    background-size: cover;
+    background-position: center;
+ }
+
+.abi1{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.abi1min{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.abi2 {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+
+.abi2img {
+    width: 100%;
+    height: 70%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+}
+.abi2img img{
+    width: 70%;
+    height: 100%; 
+    /* display: flex; 
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center; */
+}
+
+
+.abi3 {
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.abi3titre {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+   
+    
+}
+.abi3titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abi3texte {
+    width: 100%;
+    height:30%;
+    
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi3img{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.abi3img1{
+    width: 33%;
+    height: 100%;
+    
+    background: url('/static/images/pondad.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi3texte p {
+    font-size: 23px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abi3img2{
+    width: 33%;
+    height: 100%;
+   
+    background: url('/static/images/BBR-Abidjan-sur-lIle-Boulay-768x768.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi3img3{
+    width: 33%;
+    height: 100%;
+   
+    background: url('/static/images/foot.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi4 {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    
+    
+}
+
+.abi4titre {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.abi4texte {
+    width: 100%;
+    height:80%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi4texte p {
+    font-size: 23px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abi4titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.abi5 {
+    width: 100%;
+    height: 750px;
+    background-color: #fff;
+   
+    
+}
+
+.abi5titre {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+.abi5texte {
+    width: 100%;
+    height:45%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi5texte p {
+    font-size: 23px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abi5titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abi4img{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.abi4img1{
+    width: 33%;
+    height: 100%;
+    
+    background: url('/static/images/basiliq.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi4img2{
+    width: 33%;
+    height: 100%;
+    
+    background: url('/static/images/bassam\ img.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi4img3{
+    width: 33%;
+    height: 100%;
+    
+    background: url('/static/images/bereby.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi6 {
+    width: 100%;
+    height: 1300px;
+    background-color: #fff;
+    
+}
+.abi6titre {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+
+.abi6titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.abi6texte {
+    width: 100%;
+    height:45%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi6texte p {
+    font-size: 23px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abi61img{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.abi62img{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.abi6img1{
+    width: 33.33%;
+    height: 100%;
+    background: url('/static/images/plat.jpeg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+.abi6img2{
+    width: 33.33%;
+    height: 100%;
+    background: url('/static/images/Garba.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+.abi6img3{
+    width: 33.33%;
+    height: 100%;
+    background: url('/static/images/poissonb.jpeg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi6img4{
+    width: 33.33%;
+    height: 100%;
+    background: url('/static/images/alloco.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+.abi6img5{
+    width: 33.33%;
+    height: 100%;
+    background: url('/static/images/sauce\ graine.jpeg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi6img6{
+    width: 33.33%;
+    height: 100%;
+    background: url('/static/images/foutou.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.abi7 {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    
+}
+.abi7titre {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.abi7titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abi7texte {
+    width: 100%;
+    height:45%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi7texte p {
+    font-size: 23px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abi8 {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    
+}
+.abi8titre {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.abi8titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abi8texte {
+    width: 100%;
+    height:45%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi8texte p {
+    font-size: 23px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.abi9 {
+    width: 100%;
+    height: 630px;
+    background-color: #fff;
+    
+}
+.abi9titre {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+   
+}
+
+.abi9titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abi9texte {
+    width: 100%;
+    height:90%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.abi9texte p {
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.boxabi{
+    width: 100%;
+    height: 300px;
+   
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boxabimin1{
+    width: 25%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/Photo\ vetement\ akan.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.boxabimin2{
+    width: 25%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/masq1.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.boxabimin3{
+    width: 25%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/masq4.jpg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+.boxabimin4{
+    width: 25%;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/images/galerie.jpeg'); 
+    background-size: 100% 100%;
+    background-position: center;
+    transition: transform 0.5s; 
+}
+
+.boxabimin1:hover {
+    transform: scale(1.1); 
+}
+.boxabimin2:hover {
+    transform: scale(1.1); 
+}
+.boxabimin3:hover {
+    transform: scale(1.1); 
+}
+.boxabimin4:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.abi10 {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    
+}
+.abi10titre {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+   
+}
+
+.abi10titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abi10texte {
+    width: 100%;
+    height:90%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.abi11 {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+   
+}
+
+.abi11titre {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+   
+}
+
+.abi11titre h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.abi11texte{
+    width: 100%;
+    height: 30%;
+    
+}
+.abi11texte p {
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.photoabi{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+.photoabi1 {
+    width: 30%;
+    height: 100%;
+    
+}
+.photoabi img {
+    width: 30%;
+    height: 100%;
+    
+    transition: transform 0.5s; 
+}
+.photoabi img:hover {
+    transform: scale(1.5); 
+}
+
+
+/* offres */
+.offres {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: url('/static/images/bg.jpg'); 
+    background-position: center;
+    background-size: cover;
+}
+
+.offres h2,
+.offres h4 {
+    font-size: 70px; 
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 1px; 
+    color: transparent;
+    
+    padding: 10px;
+    text-transform: lowercase;
+}
+.offres h4 {
+    font-size: 30px;
+}
+ 
+
+.offresbloc1 {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offresbloc1 .offresbloc1min1 {
+    width: 100%;
+    height: 80%;
+    margin: 10px 0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.offremin1, .offremin2, .offremin3, .offremin4, .offremin5 {
+    width: 25%;
+    min-width: 200px; /* Minimum width for better responsiveness */
+    height: 100%;
+    box-shadow: 5px 5px 15px rgba(144, 246, 76, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Add margin for better spacing */
+}
+
+.offremin1 h3, .offremin2 h3, .offremin3 h3, .offremin4 h3, .offremin5 h3 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offremin1 p, .offremin2 p, .offremin3 p, .offremin4 p, .offremin5 p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    
+    .offresbloc1 .offresbloc1min1 {
+        width: 100%;
+        height: 80%;
+        margin: 10px 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .offremin1, .offremin2, .offremin3, .offremin4, .offremin5 {
+        width: 45%; /* Reduced width for better fitting */
+    }
+}
+
+@media (max-width: 992px) {
+    .offresbloc1 .offresbloc1min1 {
+        width: 100%;
+        height: 80%;
+        margin: 10px 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .offremin1, .offremin2, .offremin3, .offremin4, .offremin5 {
+        width: 100%;
+        min-width: 200px; /* Minimum width for better responsiveness */
+        height: 100%;
+        box-shadow: 5px 5px 15px rgba(144, 246, 76, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+
+    .offresbloc1 {
+        width: 100%;
+        height: 800px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .offresbloc1 .offresbloc1min1 {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .offremin1, .offremin2, .offremin3, .offremin4, .offremin5 {
+        width: 100%;
+        min-width: 200px; 
+        height: 100%;
+        box-shadow: 5px 5px 15px rgba(144, 246, 76, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px; 
+    }
+}
+
+.offres3{
+    width: 100%;
+    height: 400px;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.offres3min{
+    width: 20%;
+    height: 90%;
+    background: url('/static/images/destination-10.jpg'); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    transition: transform 0.5s;
+}
+
+.offres3min {
+    background-color: #f8f8f8;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s; 
+}
+
+.offres3min:hover {
+    transform: scale(0.9); 
+}
+
+.offres3min h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.offres3min p {
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.btn-reserver {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-reserver:hover {
+    background-color: #0056b3;
+}
+
+
+.offres3min2{
+    width: 20%;
+    height: 90%;
+    background: url('/static/images/dakar.jpg'); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    transition: transform 0.5s;
+}
+
+.offres3min2 {
+    background-color: #f8f8f8;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s; 
+}
+
+.offres3min2:hover {
+    transform: scale(0.9); 
+}
+
+.offres3min2 h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.offres3min2 p {
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.offres3min3{
+    width: 20%;
+    height: 90%;
+    background: url('/static/images/madagascar.jpg'); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    transition: transform 0.5s;
+}
+
+.offres3min3 {
+    background-color: #f8f8f8;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s; 
+}
+
+.offres3min3:hover {
+    transform: scale(0.9); 
+}
+
+.offres3min3 h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.offres3min3 p {
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+
+.offres3min4{
+    width: 20%;
+    height: 90%;
+    background: url('/static/images/comores.jpg'); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    transition: transform 0.5s;
+}
+
+.offres3min4 {
+    background-color: #f8f8f8;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s; 
+}
+
+.offres3min4:hover {
+    transform: scale(0.9); 
+}
+
+.offres3min4 h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.offres3min4 p {
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+/* media query offres 3 */
+@media (max-width: 768px) {
+    .offres3 {
+        flex-direction: row; /* Changer la direction en colonne pour les écrans plus petits */
+        height: auto; /* Ajuster la hauteur automatiquement en fonction du contenu */
+    }
+
+    .offres3min, .offres3min2, .offres3min3, .offres3min4 {
+        width: 100%; /* Utiliser la largeur complète de l'écran */
+        min-width: auto; /* Réinitialiser la largeur minimale */
+        margin: 10px 0; /* Espacement vertical entre les éléments */
+    }
+}
+
+
+
+.offres4{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    background: url('/static/images/bg_4.jpg'); 
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Pour les écrans de taille moyenne et plus grands (par exemple, tablettes et ordinateurs portables) */
+@media screen and (min-width: 768px) {
+    .offres4 {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+/* Pour les grands écrans (par exemple, ordinateurs de bureau) */
+@media screen and (min-width: 1200px) {
+    .offres4 {
+        width: 100%;
+        height: 800px;
+    }
+}
+
+
+
+
+.offres5 {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    
+    background-color: #fff; 
+    padding: 20px;
+}
+.offres5 h3 {
+    font-size: 30px; 
+    color: #333; 
+}
+.offres5 p {
+    font-size: 20px; 
+    
+}
+
+/* contact */
+.contactinfo {
+    background-color: #f2f2f2; /* Définit la couleur d'arrière-plan de l'élément */
+    border-radius: 5px; /* Arrondit les coins de l'élément */
+    padding: 20px; /* Ajoute de l'espace à l'intérieur de l'élément */
+    font-size: 16px; /* Définit la taille de la police à l'intérieur de l'élément */
+    color: #333; /* Définit la couleur du texte à l'intérieur de l'élément */
+    width: 60%; /* Définit la largeur de l'élément */
+    margin: 0 auto; /* Centre l'élément horizontalement */
+}
+
+
+/* inscription et connexion */
+
+
+.inscription {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inscription h2 {
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.inscription p {
+    text-align: center;
+}
+
+.register-button,
+.login-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007b5e;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #5a5a5a;
+}

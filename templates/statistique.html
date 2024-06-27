@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphiques Plotly</title>
+    <!-- Inclure les scripts nécessaires pour Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .graph-container {
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voir les statistiques pour mieux choisir ma destination sur Akwaba'O</h1>
+
+    <div class="graph-container">
+        <h2>Top 5 des pays les plus visités</h2>
+        <div id="graphDiv1">
+            <!-- Insérer le graphique Plotly ici -->
+            {{ graph1|safe }}
+        </div>
+    </div>
+
+    <div class="graph-container">
+        <h2>Pays les plus chers</h2>
+        <div id="graphDiv2">
+            <!-- Insérer le graphique Plotly ici -->
+            {{ graph2|safe }}
+        </div>
+    </div>
+
+    <div class="graph-container">
+        <h2>Pays de coût moyen</h2>
+        <div id="graphDiv3">
+            <!-- Insérer le graphique Plotly ici -->
+            {{ graph3|safe }}
+        </div>
+    </div>
+
+    <div class="graph-container">
+        <h2>Pays les moins chers</h2>
+        <div id="graphDiv4">
+            <!-- Insérer le graphique Plotly ici -->
+            {{ graph4|safe }}
+        </div>
+    </div>
+</body>
+</html>
+
+

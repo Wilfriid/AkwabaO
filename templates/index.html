@@ -1,0 +1,208 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akwaba</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}.">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Akwaba</span>'O</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#a-propos">à propos</a></li>
+            <li><a href="{% url 'inscription' %}">destinations</a></li>
+            <li><a href="{% url 'inscription' %}">nos offres</a></li>
+            <li><a href="{% url 'statistique' %}">statistique</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <a href="{% url 'inscription' %}" class="btn-reservation">Réserver Maintenant</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+    <!-- acceuil section -->
+    <section id="home">
+        
+        <h2>Viens je t'emmène </h2>
+        <h4>Visiter la belle Afrique</h4>
+        <p>Explorer l'Afrique, c'est comme ouvrir un livre d'aventures sans fin.</p>
+        <p>Visiter la belle Afrique, c'est embrasser la diversité sous toutes ses formes : paysages, cultures, histoires et peuples.</p>
+        <a href="{% url 'connexion' %}" class="btn-reservation home-btn">Se connecter</a>
+        <div class="find_trip">
+            <form action="">
+                <div>
+                    <label>Pays</label>
+                    <input type="text" placeholder="Entrez un Pays">
+                </div>
+                <div>
+                    <label>Ville</label>
+                    <input type="text" placeholder="Entrez une ville">
+                </div>
+                <!-- <div>
+                    <label>Région</label>
+                    <input type="text" placeholder="Entrez une région">
+                </div> -->
+                <input type="submit" value="voir">
+            </form>
+        </div>
+    </section>
+
+    <!-- A propos section -->
+    <section id="a-propos">
+        <h1 class="title">à propos</h1>
+        <div class="img-desc">
+           <div class="left">
+        
+            <video src="{% static 'images/video.mp4' %}" autoplay loop></video>
+           </div>
+            <div class="right">
+                <h3>Nous voyageons pour chercher d'autres états, d'autres vies, d'autres, âmes.</h3>
+                <p>C'est une très belle citation. Voyager nous permet non seulement de découvrir de nouvelles cultures et de voir de nouveaux paysages, mais aussi de découvrir une partie de nous-mêmes que nous ne connaissions peut-être pas auparavant. </p>
+                <a href="#">Lire Plus</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- section destination -->
+    <section id="popular-destination">
+        <h1 class="title">destinations populaires</h1>
+        <div class="content">
+            <!-- box -->
+            <div class="box">
+                <img src="{% static 'images/abidjan plateau.jpg' %}" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Abidjan</h4>
+                        <p> un pays fascinant d'Afrique de l'Ouest, doté d'une histoire riche, d'une culture vibrante et d'une diversité géographique impressionnante</p>
+                        <p></p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="{% static 'images/dakar.jpg' %}" alt="">
+                <!-- <img src="images/dakar.jpg" alt=""> -->
+                <div class="content">
+                    <div>
+                        <h4>Dakar</h4>
+                        <p>Découvrez l'île de Gorée, un puissant monument à la mémoire des victimes de la traite des esclaves, et la vibrante ville de Dakar.</p>
+                        <p></p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="{% static 'images/afrique du sud.jpg' %}" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Afrique du sud</h4>
+                        <p> Explorez le parc national Kruger pour un safari épique, visitez la charmante ville du Cap, </p>
+                        <p>et ne manquez pas la route panoramique de la Route des Jardins.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+             <!-- box -->
+             <div class="box">
+                <img src="{% static 'images/morocco.jpg' %}" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Morocco</h4>
+                        <p> Visitez Marrakech et son célèbre marché, le Jardin Majorelle et la magnifique mosquée Koutoubia. </p>
+                        <p>Ne manquez pas les montagnes de l'Atlas et le désert du Sahara.</p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+             <!-- box -->
+             <div class="box">
+                <img src="{% static 'images/Egypt.jpg' %}" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Egypte</h4>
+                        <p>Visitez les pyramides de Gizeh, le Sphinx, le temple de Louxor et d'autres sites archéologiques incroyables.</p>
+                        <p></p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+             <!-- box -->
+             <div class="box">
+                <img src="{% static 'images/OIP.jpeg' %}" alt="">
+                
+                <div class="content">
+                    <div>
+                        <h4>Kenya</h4>
+                        <p> Rendez-vous au parc national de la vallée du Rift pour une incroyable aventure de safari.</p>
+                        <p></p>
+                        <a href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+        </div>
+    </section>
+
+    <!--  contact section -->
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <form action="">
+            <div class="left-right">
+                <div class="left">
+                    <label>Nom Complet</label>
+                    <input type="text">
+                    <label>Objet</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="right">
+                    <label>Numéro</label>
+                    <input type="text">
+                    <label>Date</label>
+                    <input type="text">
+                    <label>Autres Details</label>
+                    <input type="text">
+                    <label>Adresse</label>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254236.51213213825!2d-4.144484104092473!3d5.348769976568187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sAbidjan!5e0!3m2!1sfr!2sci!4v1718188753892!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+            </div>
+            <button>Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+
+
+</body>
+</html>

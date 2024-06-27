@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akwaba</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}.">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Akwaba</span>'O</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="{% url 'propos' %}">à propos</a></li>
+            <li><a href="{% url 'destination' %}">destinations</a></li>
+            <li><a href="{% url 'recommendation' %}">recommandations</a></li>
+            <li><a href="{% url 'offres' %}">nos offres</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+        <a href="{% url 'deconnexion' %}" class="btn-reservation">déconnexion</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+
+     <div class="box1">
+     
+     </div>
+
+     <div class="box2">
+        <div class="box2min1">
+            <a href="{% url 'abidjan' %}">
+                <h1 style="color: white;">Côte d'Ivoire</h1>
+            </a>
+        </div>
+        
+        <div class="box2min2">  <h1 style="color: white;">Cap vert </h1></div>
+        <div class="box2min3"> <h1 style="color: white;">Maroc </h1> </div>
+        <div class="box2min4">  <h1 style="color: white;">Sénégal </h1></div>
+     </div>
+
+      <div class="box2">
+        <div class="box2min5"> <h1 style="color: white;">Seychelles</h1></div>
+        <div class="box2min6"> <h1 style="color: white;">Kenya</h1></div>
+        <div class="box2min7"><h1 style="color: white;">Zimbawé</h1></div>
+        <div class="box2min8"> <h1 style="color: white;">Afrique du Sud</h1></div>
+      </div>
+
+     
+     <div class="box2">
+        <div class="box2min9"> <h1 style="color: white;">Comorres</h1></div>
+        <div class="box2min10"> <h1 style="color: white;">Turquie</h1></div>
+        <div class="box2min11"> <h1 style="color: white;">Madagascar</h1></div>
+        <div class="box2min12"> <h1 style="color: white;">Tunisie</h1></div>
+     </div>
+
+     
+     <div class="box2">
+        <div class="box2min13"> <h1 style="color: white;">Ghana</h1></div>
+        <div class="box2min14"> <h1 style="color: white;">Angola</h1></div>
+        <div class="box2min15"> <h1 style="color: white;">Algerie</h1></div>
+        <div class="box2min16"> <h1 style="color: white;">Bostwana</h1></div>
+     </div>
+     
+     </div>
+
+
+     <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+</body>
+</html>

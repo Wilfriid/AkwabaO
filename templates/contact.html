@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akwaba</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}.">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Akwaba</span>'O</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="{% url 'propos' %}">à propos</a></li>
+            <li><a href="{% url 'destination' %}">destinations</a></li>
+            <li><a href="{% url 'recommendation' %}">recommandations</a></li>
+            <li><a href="{% url 'offres' %}">nos offres</a></li>
+            <li><a href="{% url 'statistique' %}">statistique</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+        </ul>
+        <a href="#" class="btn-reservation">Réserver Maintenant</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+    <!-- acceuil section -->
+    <section id="home">       
+        <h2>Contactez-nous</h2>
+        <h4>Veuillez nous contacter pour plus d'informations</h4>
+        <p>Téléphone:  0779185258</p>
+        <p>Adresse email: akwabao@gmail.com</p>
+        
+    </section>
+
+    <div class="contactinfo">
+
+    </div>
+
+    <!--  contact section -->
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <form action="">
+            <div class="left-right">
+                <div class="left">
+                    <label>Nom Complet</label>
+                    <input type="text">
+                    <label>Objet</label>
+                    <input type="text">
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="right">
+                    <label>Numéro</label>
+                    <input type="text">
+                    <label>Date</label>
+                    <input type="text">
+                    <label>Autres Details</label>
+                    <input type="text">
+                    <label>Adresse</label>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254236.51213213825!2d-4.144484104092473!3d5.348769976568187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sAbidjan!5e0!3m2!1sfr!2sci!4v1718188753892!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+            </div>
+            <button>Envoyer</button>
+        </form>
+    </section>
+
+    
+
+
+    <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+
+
+</body>
+</html>
+

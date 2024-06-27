@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akwaba</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}.">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Akwaba</span>'O</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="{% url 'propos' %}">à propos</a></li>
+            <li><a href="{% url 'destination' %}">destinations</a></li>
+            <li><a href="{% url 'recommendation' %}">recommandations</a></li>
+            <li><a href="{% url 'offres' %}">nos offres</a></li>
+            <li><a href="{% url 'statistique' %}">statistique</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+        <a href="{% url 'deconnexion' %}" class="btn-reservation">déconnexion</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+
+
+     <div class="offres">
+        <h2>NOS OFFRES </h2>
+        <h4> Hotel >Residence> Location de vehicule > Guide touristique > Activité </h4>
+        
+    </div>
+
+    <div class="offresbloc1">
+        <div class="offresbloc1min1">
+            <div class="offremin1">
+                <h3>Hotel</h3>
+                <p>Que vous cherchiez le luxe absolu, ou une option plus économique, notre hôtel est là pour vous accueillir. Nous proposons une gamme d'options pour convenir à tous les budgets, allant du séjour 5 étoiles à 3 étoiles, sans négliger le confort et la satisfaction de nos clients.</p>
+            </div>
+            <div class="offremin2">
+                <h3>Résidence</h3>
+                <p>Notre résidence propose un confort haut de gamme, avec des appartements spacieux et bien aménagés, et une gamme complète de services sur place. Profitez de nos installations de fitness et de loisirs, de nos restaurants et bars, et de notre service de conciergerie dédié pour garantir un séjour agréable .</p>
+            </div>
+            
+            
+            <div class="offremin3">
+                <h3>Location de véhicules</h3>
+                <p>Explorez la ville à votre rythme avec notre service de location de véhicules. Que vous ayez besoin d'une voiture économique, d'un véhicule familial spacieux, ou même d'une voiture de luxe, nous avons ce qu'il vous faut. Tous nos véhicules sont bien entretenus et offrent un confort maximal pour garantir votre plaisir de conduire. Réservez votre véhicule aujourd'hui pour une aventure sans stress.</p>
+            </div>
+            
+            <div class="offremin4">
+                <h3>Guide Touristique</h3>
+                <p>Découvrez les trésors cachés de la ville avec notre guide touristique personnel. Que vous souhaitiez explorer les sites historiques, goûter à la cuisine locale ou vivre des expériences uniques, notre guide expert est là pour vous accompagner. Profitez d'une visite personnalisée qui met en lumière les joyaux de la région et crée des souvenirs inoubliables. Réservez votre guide dès aujourd'hui pour une expérience touristique authentique.</p>
+            </div>
+            <div class="offremin5">
+                <h3>Activités Locales</h3>
+                <p>Plongez dans l'authenticité de la région en participant à nos nombreuses activités locales. Que vous soyez passionné par la nature, l'art, la gastronomie ou l'aventure, nous avons une activité pour vous. Explorez les sentiers de randonnée pittoresques, admirez les œuvres d'artistes locaux, savourez des plats traditionnels. Rejoignez-nous pour une immersion complète dans la culture locale et créez des souvenirs inoubliables.</p>
+            </div>
+        </div>
+        <!-- <div class="offresbloc1min1">hotel1</div> -->
+        <!-- <div class="offresbloc1min1">hotel1</div> -->
+    </div>
+
+    <div class="offres3">
+        <div class="offres3min">
+            <h3>Voyage en Côte d'Ivoire</h3>
+            <p>Découvrez la diversité culturelle de la Côte d'Ivoire lors de ce voyage de 7 jours à travers 5 villes emblématiques.</p>
+            <p>Prix: 1000€ par personne</p>
+            <p>Durée: 7 jours</p>
+            <button class="btn-reserver">Réserver</button>
+        </div>
+        <div class="offres3min2">
+            <h3>Voyage Découverte au Sénégal</h3>
+            <p>Partez à la découverte du Sénégal lors de ce voyage de 7 jours à travers 5 villes captivantes.</p>
+            <p>Prix: 850€ par personne</p>
+            <p>Durée: 7 jours</p>
+            <button class="btn-reserver">Réserver</button>
+        </div>
+        <div class="offres3min3">
+            <h3>Voyage Enchanté Madagascar</h3>
+            <p>Découvrez le charme envoûtant de Madagascar lors de ce voyage de 7 jours à travers 5 villes pittoresques.</p>
+            <p>Prix: 950€ par personne</p>
+            <p>Durée: 7 jours</p>
+            <button class="btn-reserver">Réserver</button>
+        </div>
+        <div class="offres3min4">
+            <h3>Voyage Exotique aux Comores</h3>
+            <p>Plongez dans l'exotisme des Comores lors de ce voyage de 7 jours à travers 5 villes paradisiaques.</p>
+            <p>Prix: 950€ par personne</p>
+            <p>Durée: 7 jours</p>
+            <button class="btn-reserver">Réserver</button>
+        </div>
+    </div>
+
+    <div class="offres4"></div>
+
+    
+    <div class="offres5">
+        <h3>Chez Akwaba'<span style="color: #29d9d5;">O</span></h3>
+        <p>Plongez au cœur de l'Afrique et laissez-vous séduire par sa richesse culturelle et la diversité de ses paysages. Des souks animés et colorés aux majestueux safaris dans les plaines sauvages, l'Afrique offre un spectacle inoubliable à chaque coin de rue. Explorez les traditions séculaires des différentes ethnies, imprégnez-vous de la musique envoûtante des tambours et émerveillez-vous devant l'art ancestral qui témoigne de l'histoire riche et variée du continent. 
+        Lorsque le soleil se couche sur l'horizon africain, les plages paradisiaques s'étendent à perte de vue, invitant à la détente et à la contemplation. Le bruit des vagues se mêle aux chants d'oiseaux exotiques, créant une symphonie naturelle apaisante. Les eaux turquoise et transparentes invitent à la baignade et à la découverte des fonds marins foisonnants de vie. 
+        La gastronomie africaine, riche en saveurs et en épices, est une véritable invitation au voyage culinaire. Des plats emblématiques comme le couscous, le tajine, le bobotie et le mafé raviront vos papilles et éveilleront vos sens. Chaque bouchée est un voyage gustatif qui vous transporte au cœur des traditions et des coutumes locales.
+        En somme, un voyage en Afrique est une expérience sensorielle incomparable où l'authenticité, la chaleur humaine et la beauté naturelle se rencontrent pour créer des souvenirs inoubliables et des moments magiques dont vous vous imprégnerez pour toujours.</p>
+    </div>
+    
+
+    <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+    
+</body>
+</html>

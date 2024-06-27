@@ -1,0 +1,442 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akwaba</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Akwaba</span>'O</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="{% url 'propos' %}">à propos</a></li>
+            <li><a href="{% url 'destination' %}">destinations</a></li>
+            <li><a href="{% url 'recommendation' %}">recommandations</a></li>
+            <li><a href="{% url 'offres' %}">nos offres</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+        <a href="{% url 'deconnexion' %}" class="btn-reservation">déconnexion</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+
+     <div class="abidjan">
+        
+     </div>
+
+     <div class="abi1">
+        <div class="abi1min">
+            <h1 style="color: black;">La Côte d'Ivoire  espérante terre hospitalière vous souhaite la bienvenue</h1>
+            <h1 style="color: black;">comme on dit chez nous Akwaba</h1>
+        </div>
+
+        <div style="text-align: center;">
+            <h2>Mon carnet de voyage en côte d'Ivoire</h2>
+        </div>
+     </div>
+
+
+     <div class="abi2">
+        <div class="abi2img"> 
+            <img src="{% static 'images/flag-ivory-coast.jpg' %}" alt="" >
+        </div>
+        <div class="abi2texte"> 
+            <h2>Capital : Abidjan</h2>
+            <h2>Langue : Français , Noushi</h2>
+            <h2>Monnaie : Franc cfa</h2>
+            <h2>Superficie : 322 463km carré</h2>
+            <h2>Nombre d'habitants : 29,568,557 personnes en 2024</h2>
+            <h2>Pays frontaliers : Mali , ghana ,burkina faso</h2>
+            <h2>Fete national : 11 Aout</h2>
+           
+
+            
+        </div>
+     </div>
+
+     <div class="abi3">
+        <div class="abi3titre">
+            <h1>Pourquoi voyager en Cote d'ivoire ?</h1>
+        </div>
+        <div class="abi3texte">
+            <p> Voyager en Côte d'Ivoire est une aventure passionnante et enrichissante.
+             Le pays offre une richesse culturelle inégalée avec plus de 60 groupes ethniques distincts, 
+             chacun ayant ses propres traditions uniques et des langues distinctes à découvrir.
+              La diversité des paysages naturels est à couper le souffle,
+             des forêts tropicales luxuriantes et montagnes majestueuses aux plages dorées.
+            </p>
+        </div>
+        <div class="abi3img">
+            <div class="abi3img1"></div>
+            <div class="abi3img2"></div>
+            <div class="abi3img3"></div>
+        </div>
+     </div>
+
+
+
+     <div class="abi4">
+        <div class="abi4titre">
+            <h1>Quelle est la meilleure période pour y voyager ?</h1>
+        </div>
+
+        <div class="abi4texte">
+            <p>  La meilleure période pour voyager dans le nord de la Côte d'Ivoire se situe entre novembre et février lorsque les conditions météorologiques sont plus clémentes.
+                Il faut cependant noter qu'il fait très chaud toute l'année. Les mois de mai à septembre sont généralement à éviter en raison des pluies abondantes. 
+                Assurez-vous toutefois de vérifier les conditions climatiques actuelles avant de planifier votre voyage, car elles peuvent varier. 
+               
+            </p>
+        </div>
+    </div>
+
+    <div class="abi5">
+        <div class="abi5titre">
+            <h1>Que voir et que faire en Côte d'Ivoire ?</h1>
+        </div>
+
+        <div class="abi5texte">
+            <p> Beauté des sites naturels et richesse des arts premiers comme la musique et la culture sont de belles raisons de découvrir la Côte d’Ivoire.
+
+                La capitale, Abidjan, construite autour du lagon, est une ville cosmopolite, et composée de quartiers contrastés : les gratte-ciel du Plateau, le marché de Treichville, la cathédrale Saint-Paul, le parc du Banco, sont quelques étapes à noter, en gardant à l’esprit qu’il est déconseillé de circuler seul la nuit dans cette ville à la réputation violente.
+                
+                Le parc national de la Comoé constitue la plus grande réserve de cette partie de l’Afrique : ouvert entre décembre et mars, il abrite de nombreux lions, une centaine d’éléphants, des babouins, des léopards et des singes verts, entre autres.
+                
+                Sassandra, à l’ouest d’Abidjan, vous séduira immanquablement avec son village de pêcheurs et ses merveilleuses plages aux couleurs féériques.
+                
+                La ville de Man, entourée de vertes collines, possède un marché très attrayant, et une bambouseraie où se trouve une célèbre cascade, à découvrir.
+                
+                Yamoussoukro, capitale politique du pays, vaut le détour pour sa gigantesque basilique, le plus important lieu de culte chrétien au monde, ainsi que pour le lac aux crocodiles entourant le palais présidentiel, ces derniers étant nourris de poulets chaque jour vers 17H par les gardiens…
+               
+            </p>
+        </div>
+        <div class="abi4img">
+            <div class="abi4img1"></div>
+            <div class="abi4img2"></div>
+            <div class="abi4img3"></div>
+        </div>
+       
+    </div>
+    
+    <div class="abi6">
+        <div class="abi6titre">
+            <h1>Quels sont les meilleurs plats culinaires en Côte d'Ivoire ?</h1>
+        </div>
+
+        <div class="abi6texte">
+            
+            <p><small><strong>1. Attiéké</strong></small></p>
+            <p><small>Description : Couscous de manioc fermenté,
+                 souvent servi avec du poisson frit ou du poulet.</small></p>
+            <p><small><strong>2. Garba </strong></small></p>
+            <p><small>Description : Attiéké accompagné de thon frit et souvent servi avec des légumes frais et une sauce pimentée.</small></p>
+            <p><small><strong>3. Alloco </strong></small></p>
+            <p><small>Description : Bananes plantains frites, croustillantes et dorées.</small></p>
+            <p><small><strong>4. Kédjénou </strong></small></p>
+            <p><small>Description : Ragoût de poulet ou de poisson cuit à l'étouffée avec des légumes (aubergines, tomates, oignons) dans une feuille de bananier ou un pot en terre.</small></p>
+            <p><small><strong>5. Sauce arachide </strong></small></p>
+            <p><small>Description : Sauce onctueuse à base de pâte d'arachide, souvent accompagnée de viande ou de poisson.</small></p>
+            <p><small><strong>6. Foutou </strong></small></p>
+            <p><small>Description : Purée de banane plantain ou d'igname, accompagnée de diverses sauces (graine, arachide, aubergine).</small></p>
+            <p><small><strong>7. Sauce graine  </strong></small></p>
+            <p><small>Description : Sauce épaisse à base de graines de palme, généralement servie avec de la viande (bœuf, poulet) ou du poisson.</small></p>
+            <p><small><strong>8. Bihé Cossè  </strong></small></p>
+            <p><small>Description :également connu sous le nom de Bihé Cossèu, est un plat traditionnel emblématique de la Côte d'Ivoire.  Ce plat marie harmonieusement le manioc pilé, qui constitue la base du bihé, avec une sauce épaisse et savoureuse à base de graines de courge ou de pistache, appelée cossè. C'est un plat apprécié pour sa simplicité, ses saveurs authentiques et ses valeurs nutritionnelles. </small></p>
+           
+        </div>
+        <div class="abi61img">
+            <div class="abi6img1"></div>
+            <div class="abi6img2"></div>
+            <div class="abi6img3"></div>
+        </div>
+        <div class="abi62img">
+            <div class="abi6img4"></div>
+            <div class="abi6img5"></div>
+            <div class="abi6img6"></div>
+        </div>
+    </div>
+
+
+    <div class="abi7">
+        <div class="abi7titre">
+            <h1>Et concernant la santé en Côte d'Ivoire ?</h1>
+        </div>
+
+        <div class="abi7texte">
+            <p> Concernant la santé, il est fortement conseillé d’avoir ses vaccins classiques à jour,
+                 en plus de ceux contre la fièvre jaune, la typhoïde, l’hépatite B et éventuellement la rage.
+                  Emportez en outre une trousse à pharmacie de base, protégez-vous contre les moustiques et
+                   ne consommez que de l’eau en bouteilles fermées ;
+                   évitez également les crudités.
+                
+            </p>
+        </div>
+
+    </div>
+  
+    <div class="abi8">
+        <div class="abi8titre">
+            <h1>Comment organiser son voyage en Cote d'ivoire ?</h1>
+        </div>
+
+        <div class="abi8texte">
+            <p> Vous avez décidé que la Cote d'ivoire était la destination de vos prochaines vacances,
+                 mais vous ne savez pas encore comment organiser ce voyage tant l’offre de tourisme en Cote d'ivoire est grande.
+                  Plusieurs options s’offrent à vous !
+                Tout d’abord, vous pouvez passer par une agence de voyage qui se chargera pour vous de toute l’organisation avec, par exemple, des circuits définis à l’avance.
+                 Il existe également des clubs vacances dans lesquels, vous pourrez passer des vacances reposantes sans vous soucier de rien ! Enfin, vous pouvez par ailleurs sillonner le pays au gré de vos envies et vous trouver simplement des locations ,des hotels.
+                 Il existe une grande offre à ce niveau dans la plupart des destinations du pays.
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="abi9">
+        <div class="abi9titre">
+            <h1>Découverte de la Culture Traditionnelle en Côte d'Ivoire </h1>
+        </div>
+
+        <div class="abi9texte">
+            <p> La Côte d'Ivoire est un pays riche en diversité culturelle et en traditions. 
+                Cette diversité se reflète dans ses nombreux groupes ethniques, ses langues,
+                 ses danses, ses musiques, et ses coutumes.
+                 Voici un aperçu des éléments clés de la culture traditionnelle ivoirienne.
+                
+            </p>
+            <p><small><strong>1.Groupes Ethniques </strong></small></p>
+            <p><small>
+                La Côte d'Ivoire est composée de plus de 60 groupes ethniques, 
+                les plus importants étant les Akan, les Krou, les Mandé, et les Gour.
+                 Chaque groupe possède ses propres coutumes, langues et traditions. Les ethnies les plus populaires:(Baoulé,Bété,Dioula)</small>
+            </p>
+            <p><small><strong>2.Festival d'Abissa à Grand-Bassam: </strong></small></p>
+            <p><small>
+                Un festival annuel de la communauté Nzima, qui combine musique, danse, et rituels de purification.</small>
+            </p>
+            <p><small><strong>3.Popo Carnaval: </strong></small></p>
+            <p>
+                <small>
+                    Le Popo Carnaval de Bonoua est une fête incontournable qui capture l'esprit vibrant 
+                    et accueillant de la Côte d'Ivoire. C'est une occasion unique de découvrir la richesse culturelle du pays 
+                    à travers des défilés colorés, des danses envoûtantes, des expositions d'artisanat et des délices culinaires. 
+                    Pour les touristes et les habitants, 
+                    le Popo Carnaval est une célébration de la diversité et de la créativité ivoirienne.
+                </small>
+            </p>
+
+            <p><small><strong>4.Akan brunch: </strong></small></p>
+            <p>
+                <small>
+                    L'Akan Brunch est une célébration vivante et dynamique de la culture Akan en Côte d'Ivoire.
+                     C'est une opportunité pour les habitants et les visiteurs de découvrir
+                      la profondeur des traditions Akan à travers la musique, la danse, l'artisanat et la gastronomie. En participant à ce festival, on peut apprécier la richesse et 
+                    la diversité du patrimoine culturel ivoirien, tout en soutenant les communautés locales.
+                </small>
+            </p>
+
+            <p><small><strong>5.Art et Artisanat en Côte d'Ivoire: </strong></small></p>
+            <p>
+                <small>
+                    L'art et l'artisanat en Côte d'Ivoire sont des expressions vivantes de la culture et de l'histoire des différentes ethnies du pays. Ils jouent un rôle important non seulement dans la vie quotidienne et les cérémonies religieuses,
+                     mais aussi dans la préservation et la transmission des traditions. Les artisans ivoiriens continuent de créer des œuvres d'une grande beauté et d'une grande signification culturelle,
+                      contribuant ainsi à la richesse du patrimoine artistique du pays. Pour les visiteurs, découvrir l'art et l'artisanat ivoiriens est une manière enrichissante de comprendre et 
+                      d'apprécier la diversité et la profondeur de la culture ivoirienne.
+                </small>
+            </p>
+           
+
+        </div>
+    </div>
+
+    
+        <div class="boxabi">
+            <div class="boxabimin1"></div>
+            <div class="boxabimin2"> </div>
+            <div class="boxabimin3"> </div>  
+            <div class="boxabimin4"> </div>  
+        </div>
+        <div class="boxabi">
+            <div class="boxabimin1"></div>
+            <div class="boxabimin2"> </div>
+            <div class="boxabimin3"> </div>  
+            <div class="boxabimin3"> </div> 
+        </div>
+
+        <div class="abi10">
+            <div class="abi10titre">
+                <h1>Coût de la Vie Quotidienne en Côte d'Ivoire</h1>
+            </div>
+    
+            <div class="abi8texte">
+                <p> Le budget à prévoir pour votre vie quotidienne est très modéré,
+                     un repas moyen vous coûtera une 10 €(6500 fcfa), 
+                    d’une cuisine souvent délicieuse mais épicée, et une chambre double dans un hôtel correct 20 €(15000 fcfa).
+                    
+                </p>
+
+                <p>
+                    La Côte d'Ivoire offre un coût de la vie relativement modéré, 
+                    surtout en dehors des grandes villes comme Abidjan. Les logements,
+                     la nourriture et les transports sont abordables, tandis que les services utilitaires 
+                     et les soins de santé sont raisonnablement accessibles.
+                </p>
+            </div>
+        </div>
+
+        <div class="abi10">
+            <div class="abi10titre">
+                <h1> Nos offres touristiques Akwaba</h1>
+            </div>
+    
+            <div class="abi8texte">
+                <p><small><strong> Tarif : 1600 £ ; 1600 $ ; 1.000.000 fcfa (12 a 15 jours) </strong></small></p>
+                <p><small>
+                          Destination touristique : Avec cette offre , 
+                          vous pouvez donc profiter d'un séjour de 12 jours dans des destinations comme Abidjan,
+                          Grand-Bassam, Yamoussoukro, ou San Pedro, en profitant d'un logement confortable,
+                          de bons repas, de transports locaux et d'activités touristiques.
+                </small></p>
+                
+            </div>
+        </div>
+        
+
+        <div class="abi11">
+            <div class="abi11titre">
+                <h1> Quelles sont les meilleures destinations touristiques en Cote d'ivoire ?</h1>
+            </div>
+            <div class="abi11texte">
+                <p> 
+                    Abidjan, la capitale économique de la Côte d'Ivoire, est une destination touristique dynamique
+                     et cosmopolite. Elle offre une combinaison unique de culture,
+                     d'histoire, de nature et de divertissement. Voici un guide sur ce que vous pouvez explorer et apprécier à Abidjan.
+                </p> 
+            </div>
+            
+            <div class="photoabi">
+                <img src="{% static 'images/abidjan1.jpg' %}" alt="" >
+                <img src="{% static 'images/Abidjan2.jpg' %}" alt="" >
+                <img src="{% static 'images/noon.jpg' %}" alt="" >
+                
+            </div>   
+            
+        </div>
+        
+
+        <div class="abi11">
+            <div class="abi11titre">
+                <!-- <h1> Grand-Bassam</h1> -->
+            </div>
+            <div class="abi11texte">
+                <p> 
+                    Grand-Bassam, située à environ 45 km à l'est d'Abidjan, 
+                    est une ville côtière historique et l'ancienne capitale coloniale de la Côte d'Ivoire. Inscrite au patrimoine mondial de l'UNESCO,
+                    Grand-Bassam est connue pour son architecture coloniale, ses plages et son ambiance culturelle riche.
+                </p> 
+            </div>
+            
+            <div class="photoabi">
+                <img src="{% static 'images/bassam img.jpg' %}" alt="" >
+                <img src="{% static 'images/Grand-Bassam-Musee.jpg' %}" alt="" >
+                <img src="{% static 'images/jardinB.jpg' %}" alt="" >
+                
+            </div>   
+            
+        </div>
+    
+        
+        <div class="abi11">
+            <div class="abi11titre">
+                <!-- <h1> Grand-Bassam</h1> -->
+            </div>
+            <div class="abi11texte">
+                <p> 
+                    Assinie est une station balnéaire prisée située à environ 90 km à l'est d'Abidjan. 
+                    C'est une destination idéale pour les amoureux de la mer, de la nature et du calme.
+                     Assinie est connue pour ses plages de sable fin, ses lagunes pittoresques et son ambiance paisible.
+
+
+                </p> 
+            </div>
+            
+            <div class="photoabi">
+                <img src="{% static 'images/assinie1.jpg' %}" alt="" >
+                <img src="{% static 'images/Assinie-Beach.jpg' %}" alt="" >
+                <img src="{% static 'images/plage-mer-ocean-assinie.jpg' %}" alt="" >
+                
+            </div>   
+            
+        </div>
+     
+              
+        <div class="abi11">
+            <div class="abi11titre">
+                <!-- <h1> Grand-Bassam</h1> -->
+            </div>
+            <div class="abi11texte">
+                <p> 
+                    Yamoussoukro, la capitale politique et administrative de la Côte d'Ivoire,
+                     est une destination touristique fascinante avec son mélange unique de modernité et de traditions. Située à environ 240 km au nord d'Abidjan,
+                     Yamoussoukro offre de nombreuses attractions historiques, culturelles et naturelles.
+
+                </p> 
+            </div>
+            
+            <div class="photoabi">
+                <img src="{% static 'images/basilique-Notre-Dame.jpg' %}" alt="" >
+                <img src="{% static 'images/hotel-president.jpeg' %}" alt="" >
+                <img src="{% static 'images/yakro.jpg' %}" alt="" >
+                
+            </div>   
+            
+        </div>
+
+        <div class="abi11">
+            <div class="abi11titre">
+                <!-- <h1> Grand-Bassam</h1> -->
+            </div>
+            <div class="abi11texte">
+                <p> 
+                    San Pedro est une ville portuaire située sur la côte sud-ouest de la Côte d'Ivoire.
+                     Connue pour ses plages immaculées, ses réserves naturelles et son port animé,
+                     San Pedro est une destination attrayante pour les touristes en quête de détente, d'aventure et de découverte culturelle.
+
+                </p> 
+            </div>
+            
+            <div class="photoabi">
+                <img src="{% static 'images/bereby.jpg' %}" alt="" >
+                <img src="{% static 'images/lacbereby.jpeg' %}" alt="" >
+                <img src="{% static 'images/Grand-bereby.jpg' %}" alt="" >
+                
+            </div>   
+            
+        </div>
+    
+    
+    
+
+   
+    <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+     
+</body>
+</html>

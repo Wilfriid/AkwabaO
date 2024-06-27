@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommandation de voyage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 48%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .back-button {
+            background-color: #6c757d;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommandez-moi une destination</h1>
+    <form method="post" action="{% url 'recommendation' %}">
+        {% csrf_token %}
+        <label for="budget_jour">Budget (EUR):</label>
+        <input type="number" id="budget_jour" name="budget_jour" required><br><br>
+        
+        <label for="duree_sejour">Durée du séjour (jours):</label>
+        <input type="number" id="duree_sejour" name="duree_sejour" required><br><br>
+
+        <label for="preferences_voyage">Préférence de voyage (Plage, Nature, Culture):</label>
+        <input type="text" id="preferences_voyage" name="preferences_voyage" required><br><br>
+
+        <label for="activites_voyage">Activités (Culture, Aventure, Détente, Plongée, Histoire, Safari):</label>
+        <input type="text" id="activites_voyage" name="activites_voyage" required><br><br>
+
+        <label for="hotel_etoiles">Type d'hôtel (Hotel 3*, Hotel 4*, Hotel 5*):</label>
+        <input type="text" id="hotel_etoiles" name="hotel_etoiles" required><br><br>
+
+        <div class="button-container">
+            <button type="submit">Obtenir des recommandations</button>
+            <button type="button" class="back-button" onclick="window.history.back()">Retour</button>
+        </div>
+    </form>
+
+    
+</body>
+</html>

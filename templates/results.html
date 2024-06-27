@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats de recommandation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            max-width: 800px;
+        }
+        li {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        li span {
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .back-button {
+            background-color: #6c757d;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <h1>Destinations recommandées</h1>
+    <ul>
+        {% for recommendation in recommendations %}
+        <li>
+            <span>Pays :</span> {{ recommendation.Pays }}<br>
+            <span>Budget :</span> {{ recommendation.Budget }} EUR<br>
+            <span>Durée :</span> {{ recommendation.Duree }} jours<br>
+            <span>Préférence :</span> {{ recommendation.Preferences }}<br>
+            <span>Activités :</span> {{ recommendation.Activites }}<br>
+            <span>Hotel :</span> 
+            {% if hotel_etoiles == 'Hotel 3*' %}
+                {{ recommendation.Hotel_3 }} EUR
+            {% elif hotel_etoiles == 'Hotel 4*' %}
+                {{ recommendation.Hotel_4 }} EUR
+            {% else %}
+                {{ recommendation.Hotel_5 }} EUR
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    <button class="back-button" onclick="window.history.back()">Retour</button>
+
+
+
+
+    <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+</body>
+</html>
+
+

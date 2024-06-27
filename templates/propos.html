@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akwaba</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}.">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>Akwaba</span>'O</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="{% url 'propos' %}">à propos</a></li>
+            <li><a href="{% url 'destination' %}">destinations</a></li>
+            <li><a href="{% url 'recommendation' %}">recommandations</a></li>
+            <li><a href="{% url 'offres' %}">nos offres</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+        <a href="#" class="btn-reservation">Réserver Maintenant</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+    <!-- acceuil section -->
+    <section id="home">
+        
+        <h2> A propos </h2>
+        
+        <p style="font-size:20px;">Au cœur de notre belle planète se trouve notre pays merveilleux, un joyau de culture, de beauté naturelle et d'hospitalité.</p>
+
+        <p style="font-size:20px;">Riche d'une histoire remontant à des milliers d'années, notre pays est un trésor d'art, d'architecture et de cuisine incroyables.</p>
+
+
+
+    </section>
+
+    <footer>
+        <p> Réalisé par <span>ZekDev</span> | Tous les droits sont réservés.</p>
+    </footer>
+
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+
+
+</body>
+</html>
